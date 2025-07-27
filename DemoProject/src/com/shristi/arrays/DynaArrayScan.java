@@ -27,7 +27,6 @@ public class DynaArrayScan {
 			   marks[i][j]=sc.nextInt();
 		   }
 		}
-		
 		for (int[] one : marks) {
 			for(int val:one) {
 				System.out.print(val+" ");
