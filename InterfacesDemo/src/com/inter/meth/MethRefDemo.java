@@ -8,7 +8,7 @@ public class MethRefDemo {
 		//refer to an instance method of loan class
 		IProcessor processor  = loan::checkDocuments;
 		processor.showProcess("personal loan");
-		
+		 
 		//refer to an static method of loan class
 		processor = Loan::printNames;
 		processor.showProcess("vehicle loan");
