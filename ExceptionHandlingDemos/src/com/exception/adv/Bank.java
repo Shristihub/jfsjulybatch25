@@ -14,7 +14,7 @@ public class Bank {
 		} catch (Exception e) {
 			System.out.println("technical error....");
 			System.out.println(e.getMessage());
-			throw e;
+//			throw e;
 		} finally {
 			System.out.println("close db");
 		}
