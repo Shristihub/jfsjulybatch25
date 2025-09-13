@@ -6,6 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Comparator;
 
 public class RetrieveStudent {
 
@@ -35,8 +36,10 @@ public class RetrieveStudent {
 				students.add(student);
 			}
 			System.out.println();
-			
-			students.forEach(System.out::println);
+			students.stream()
+//				 .sorted((s1,s2)->s1.getStudentName().compareTo(s2.getStudentName()))
+				 .sorted(Comparator.comparing(Student::getStudentName))
+				 .forEach(System.out::println);
 			
 			
 		}catch(SQLException e) {
