@@ -9,4 +9,7 @@ public class Calculator {
 		return x*y;
 	}
 
+	public boolean isEven(int number) {
+        return number % 2 == 0;
+    }
 }
